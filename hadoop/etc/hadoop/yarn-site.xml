@@ -23,11 +23,21 @@
       <name>yarn.nodemanager.auxservices.mapreduce.shuffle.class</name>
       <value>org.apache.hadoop.mapred.ShuffleHandler</value>
   </property-->
+<property>
+     <name>yarn.resourcemanager.scheduler.class</name>
+ <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>
+ </property> 
+
   <property>
       <name>yarn.resourcemanager.hostname</name>
       <value>node1</value>
       <description>The hostname of the Ressource Manager.</description>
   </property>
+<property>
+     <name>yarn.nodemanager.resource.memory-mb</name>
+     <value>4000</value>
+ </property>
+
 <property>
     <name>yarn.nodemanager.pmem-check-enabled</name>
     <value>false</value>
